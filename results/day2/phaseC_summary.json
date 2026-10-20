@@ -1,0 +1,22 @@
+{
+  "total_failed_trials": 51346,
+  "with_why_stopped": 45567,
+  "coverage_primary_label_pct": 48.58,
+  "category_multilabel_counts": {
+    "efficacy": 1351,
+    "safety": 2577,
+    "pk": 81,
+    "recruitment": 10112,
+    "operational": 13039
+  },
+  "primary_distribution": {
+    "unknown": 26403,
+    "operational": 11679,
+    "recruitment": 9883,
+    "safety": 2087,
+    "efficacy": 1247,
+    "pk": 47
+  },
+  "anthropic_llm_resolved": 0,
+  "elapsed_s": 2.3
+}

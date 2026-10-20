@@ -4,15 +4,15 @@ Gate 3: Feature engineering (Lo et al. 2019 tabular baseline features).
 Builds a feature matrix at the trial level from AACT + FDA + ChEMBL.
 
 Outputs:
-  /mnt/ssd/research/trial-failure/processed/features_tabular.parquet
-  /mnt/ssd/research/trial-failure/processed/features_tabular_schema.json
+  work/processed/features_tabular.parquet
+  work/processed/features_tabular_schema.json
 
 Resumable: ChEMBL MoA pulls are cached in `chembl.drug_moa` table inside the
 existing DuckDB (`aact.duckdb`). Only drugs not yet cached are queried.
 
 Run:
-  source /home/rohit/venvs/trial-failure/bin/activate
-  python /mnt/ssd/research/trial-failure/src/gate3_features.py
+  source venv/bin/activate
+  python work/src/gate3_features.py
 """
 
 from __future__ import annotations
@@ -43,9 +43,9 @@ for _name in (
     logging.getLogger(_name).setLevel(logging.WARNING)
 
 # ---------- paths and constants ----------
-PROJECT_ROOT = Path("/mnt/ssd/research/trial-failure")
+PROJECT_ROOT = Path("work")
 DUCKDB_PATH = PROJECT_ROOT / "aact.duckdb"
-RAW_AACT_DIR = Path("/mnt/hdd/research/trial-failure/raw/aact/extracted")
+RAW_AACT_DIR = Path("work/raw/aact/extracted")
 PROCESSED_DIR = PROJECT_ROOT / "processed"
 LOGS_DIR = PROJECT_ROOT / "logs"
 GATES_LOG = LOGS_DIR / "gates.log"
@@ -70,7 +70,7 @@ def notify(msg: str, urgent: bool = False) -> None:
     """Fire a push to the user's phone via ~/bin/notify. Best-effort."""
     msg = msg[:150]
     try:
-        cmd = ["/home/rohit/bin/notify", msg, "trial-failure G3"]
+        cmd = [os.environ.get("NOTIFY_BIN", "notify"), msg, "trial-failure G3"]
         if urgent:
             cmd.append("urgent")
         subprocess.run(cmd, check=False, timeout=5)
@@ -913,7 +913,7 @@ def main() -> int:
         f.write(gate_line)
     log.info(gate_line.strip())
 
-    # Diagnostics dump for return-to-orchestrator.
+    # Diagnostics dump.
     diag_path = LOGS_DIR / "gate3_diagnostics.json"
     diag = {
         "n_samples": n_samples,

@@ -10,7 +10,7 @@ Sections:
   B6 - Leave-one-DRUG-out target encoding sanity check on indication & drug-class fold encodings
   B7 - Synthesis: drop confirmed leaks, retrain on all 8 splits, compare audited AUROC
 
-All outputs to /mnt/ssd/research/trial-failure/results/day3/.
+All outputs to work/results/day3/.
 """
 from __future__ import annotations
 import json
@@ -35,13 +35,13 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
-        logging.FileHandler("/mnt/ssd/research/trial-failure/logs/day3_phaseB.log"),
+        logging.FileHandler("work/logs/day3_phaseB.log"),
         logging.StreamHandler(sys.stdout),
     ],
 )
 log = logging.getLogger("phaseB")
 
-ROOT = Path("/mnt/ssd/research/trial-failure")
+ROOT = Path("work")
 FEAT_PATH = ROOT / "processed/day2/features_v2.parquet"
 SPLIT_DIR = ROOT / "processed/splits"
 MODEL_DIR = ROOT / "models/day2"
@@ -559,7 +559,7 @@ def main():
     #   - is_orphan_at_registration  (under audit)
     #   - any other feature with massive test-set predictiveness
     suspects = []
-    # Explicit suspect features called out in the orchestrator dispatch
+    # Explicit suspect features flagged up front
     named_suspects = {"is_orphan_at_registration", "drug_has_orphan_ever", "chembl_resolved",
                       "fda_match", "matched_intervention_count"}
     for _, r in uni.iterrows():

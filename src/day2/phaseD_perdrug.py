@@ -37,7 +37,7 @@ from sklearn.model_selection import StratifiedKFold
 
 optuna.logging.set_verbosity(optuna.logging.WARNING)
 
-ROOT = Path("/mnt/ssd/research/trial-failure")
+ROOT = Path("work")
 DUCKDB = ROOT / "aact.duckdb"
 PARQUET_V2 = ROOT / "processed/day2/features_v2.parquet"
 OUTDIR = ROOT / "processed/day2"

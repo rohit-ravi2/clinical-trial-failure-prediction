@@ -19,8 +19,8 @@ For every split, compute per-fold target encodings from training rows only:
 Groups smaller than MIN_GROUP_SIZE fall back to the overall train base rate.
 
 Saves:
-  - /mnt/ssd/research/trial-failure/processed/splits/split_<target>_<type>.pkl
-  - /mnt/ssd/research/trial-failure/processed/splits/fold_encodings_<target>_<type>.parquet
+  - work/processed/splits/split_<target>_<type>.pkl
+  - work/processed/splits/fold_encodings_<target>_<type>.parquet
 """
 from __future__ import annotations
 
@@ -41,7 +41,7 @@ import pandas as pd
 # --------------------------------------------------------------------------------------
 # Paths and constants
 # --------------------------------------------------------------------------------------
-ROOT = Path("/mnt/ssd/research/trial-failure")
+ROOT = Path("work")
 FEATURES_PATH = ROOT / "processed" / "features_tabular.parquet"
 SPLITS_DIR = ROOT / "processed" / "splits"
 LOGS_DIR = ROOT / "logs"
@@ -101,7 +101,7 @@ KINASE_RULE = "mechanism_of_action lowercased contains substring 'kinase'"
 KINASE_RULE_NOTE = (
     "Narrow 'kinase inhibitor' substring only hits 1 row in the P3 cohort because "
     "ChEMBL's MoA strings are highly specific (e.g. 'tyrosine-protein kinase btk inhibitor'). "
-    "Expanded per agent spec to all MoA strings containing 'kinase'."
+    "Expanded to all MoA strings containing 'kinase'."
 )
 GPCR_RULE = "mechanism_of_action lowercased matches curated GPCR family regex (see GPCR_PATTERNS)"
 ONCOLOGY_RULE = "therapeutic_area == 'oncology'"

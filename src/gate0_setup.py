@@ -1,11 +1,11 @@
 """Gate 0: Environment setup and import verification.
 
 Verifies the trial-failure venv has all required packages installed and importable.
-Writes a PASS/FAIL line to /mnt/ssd/research/trial-failure/logs/gates.log.
+Writes a PASS/FAIL line to work/logs/gates.log.
 
 Usage:
     source ~/venvs/trial-failure/bin/activate
-    python /mnt/ssd/research/trial-failure/src/gate0_setup.py
+    python work/src/gate0_setup.py
 """
 from __future__ import annotations
 
@@ -16,10 +16,10 @@ import sys
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
-# Paths (absolute, per agent definition)
+# Paths
 # ---------------------------------------------------------------------------
-SSD_ROOT = Path("/mnt/ssd/research/trial-failure")
-HDD_ROOT = Path("/mnt/hdd/research/trial-failure")
+SSD_ROOT = Path("work")
+HDD_ROOT = Path("work")
 LOG_DIR = SSD_ROOT / "logs"
 GATES_LOG = LOG_DIR / "gates.log"
 REQUIREMENTS_PATH = SSD_ROOT / "requirements.txt"

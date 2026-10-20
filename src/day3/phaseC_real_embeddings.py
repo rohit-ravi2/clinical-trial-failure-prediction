@@ -9,9 +9,9 @@ Sub-phases:
   C4 - Refit fusion model with real embeddings (deferred to a separate driver)
 
 Outputs:
-  /mnt/ssd/research/trial-failure/processed/day3/smiles_embeddings.npz
-  /mnt/ssd/research/trial-failure/processed/day3/protein_embeddings.npz
-  /mnt/ssd/research/trial-failure/processed/day3/text_embeddings.npz
+  work/processed/day3/smiles_embeddings.npz
+  work/processed/day3/protein_embeddings.npz
+  work/processed/day3/text_embeddings.npz
 
 GPU: 4060 Ti / 8GB. ChemBERTa-zinc-base-v1 is 87M params (≈350MB fp32).
 ESM2-150M is ~590MB. SciBERT is ~440MB. Each fits comfortably; embeddings
@@ -36,13 +36,13 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
-        logging.FileHandler("/mnt/ssd/research/trial-failure/logs/day3_phaseC.log"),
+        logging.FileHandler("work/logs/day3_phaseC.log"),
         logging.StreamHandler(sys.stdout),
     ],
 )
 log = logging.getLogger("phaseC")
 
-ROOT = Path("/mnt/ssd/research/trial-failure")
+ROOT = Path("work")
 OUT_DIR = ROOT / "processed/day3"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 

@@ -22,8 +22,8 @@ We also produce 4 fusion variants:
 For each variant, run on all 8 task/split combos. Save metrics.
 
 Outputs:
-  /mnt/ssd/research/trial-failure/processed/day3/real_embeddings_per_nct/*.npz
-  /mnt/ssd/research/trial-failure/results/day3/real_fusion_summary.json
+  work/processed/day3/real_embeddings_per_nct/*.npz
+  work/results/day3/real_fusion_summary.json
 """
 from __future__ import annotations
 import json
@@ -45,13 +45,13 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
-        logging.FileHandler("/mnt/ssd/research/trial-failure/logs/day3_phaseC4.log"),
+        logging.FileHandler("work/logs/day3_phaseC4.log"),
         logging.StreamHandler(sys.stdout),
     ],
 )
 log = logging.getLogger("phaseC4")
 
-ROOT = Path("/mnt/ssd/research/trial-failure")
+ROOT = Path("work")
 DUCKDB = ROOT / "aact.duckdb"
 PARQUET_V2 = ROOT / "processed/day2/features_v2.parquet"
 SPLITS_DIR = ROOT / "processed/splits"

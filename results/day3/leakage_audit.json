@@ -1,0 +1,691 @@
+{
+  "focus_split": "p3_success / time",
+  "top15_test_dev_from_half": [
+    {
+      "feature": "moa_bucket_unknown",
+      "train_auc": 0.6530584434924163,
+      "test_auc": 0.6948787528058908,
+      "delta_test_minus_train": 0.04182030931347458,
+      "test_dev_from_half": 0.19487875280589084,
+      "train_null_rate": 0.0,
+      "test_null_rate": 0.0,
+      "abs_test_dev": 0.19487875280589084
+    },
+    {
+      "feature": "target_type_unknown",
+      "train_auc": 0.6361168798596627,
+      "test_auc": 0.6870573079337583,
+      "delta_test_minus_train": 0.0509404280740956,
+      "test_dev_from_half": 0.1870573079337583,
+      "train_null_rate": 0.0,
+      "test_null_rate": 0.0,
+      "abs_test_dev": 0.1870573079337583
+    },
+    {
+      "feature": "action_type_unknown",
+      "train_auc": 0.6361168798596627,
+      "test_auc": 0.6870573079337583,
+      "delta_test_minus_train": 0.0509404280740956,
+      "test_dev_from_half": 0.1870573079337583,
+      "train_null_rate": 0.0,
+      "test_null_rate": 0.0,
+      "abs_test_dev": 0.1870573079337583
+    },
+    {
+      "feature": "sponsor_class_industry",
+      "train_auc": 0.670171806843298,
+      "test_auc": 0.6638640211978135,
+      "delta_test_minus_train": -0.006307785645484509,
+      "test_dev_from_half": 0.16386402119781351,
+      "train_null_rate": 0.0,
+      "test_null_rate": 0.0,
+      "abs_test_dev": 0.16386402119781351
+    },
+    {
+      "feature": "sponsor_class_academic",
+      "train_auc": 0.653583342873144,
+      "test_auc": 0.6631244810757174,
+      "delta_test_minus_train": 0.009541138202573407,
+      "test_dev_from_half": 0.16312448107571742,
+      "train_null_rate": 0.0,
+      "test_null_rate": 0.0,
+      "abs_test_dev": 0.16312448107571742
+    },
+    {
+      "feature": "target_type_SINGLE PROTEIN",
+      "train_auc": 0.6125643224699828,
+      "test_auc": 0.6476903293543296,
+      "delta_test_minus_train": 0.03512600688434675,
+      "test_dev_from_half": 0.14769032935432957,
+      "train_null_rate": 0.0,
+      "test_null_rate": 0.0,
+      "abs_test_dev": 0.14769032935432957
+    },
+    {
+      "feature": "target_novelty",
+      "train_auc": 0.6085953475966566,
+      "test_auc": 0.6440600012773521,
+      "delta_test_minus_train": 0.03546465368069551,
+      "test_dev_from_half": 0.14406000127735208,
+      "train_null_rate": 0.0,
+      "test_null_rate": 0.0,
+      "abs_test_dev": 0.14406000127735208
+    },
+    {
+      "feature": "num_distinct_prior_drugs_same_target",
+      "train_auc": 0.6085953475966565,
+      "test_auc": 0.6440600012773521,
+      "delta_test_minus_train": 0.035464653680695624,
+      "test_dev_from_half": 0.14406000127735208,
+      "train_null_rate": 0.0,
+      "test_null_rate": 0.0,
+      "abs_test_dev": 0.14406000127735208
+    },
+    {
+      "feature": "enrollment",
+      "train_auc": 0.606859875936544,
+      "test_auc": 0.6334328603495895,
+      "delta_test_minus_train": 0.026572984413045453,
+      "test_dev_from_half": 0.13343286034958945,
+      "train_null_rate": 0.02381978874757491,
+      "test_null_rate": 0.0,
+      "abs_test_dev": 0.13343286034958945
+    },
+    {
+      "feature": "enrollment_log1p",
+      "train_auc": 0.607840471486733,
+      "test_auc": 0.6334328603495895,
+      "delta_test_minus_train": 0.02559238886285642,
+      "test_dev_from_half": 0.13343286034958945,
+      "train_null_rate": 0.0,
+      "test_null_rate": 0.0,
+      "abs_test_dev": 0.13343286034958945
+    },
+    {
+      "feature": "num_prior_trials_same_target",
+      "train_auc": 0.6010255969348469,
+      "test_auc": 0.6268620911499752,
+      "delta_test_minus_train": 0.025836494215128236,
+      "test_dev_from_half": 0.12686209114997515,
+      "train_null_rate": 0.0,
+      "test_null_rate": 0.0,
+      "abs_test_dev": 0.12686209114997515
+    },
+    {
+      "feature": "moa_bucket_inhibitor",
+      "train_auc": 0.5679610566721752,
+      "test_auc": 0.6226655222422826,
+      "delta_test_minus_train": 0.05470446557010733,
+      "test_dev_from_half": 0.12266552224228255,
+      "train_null_rate": 0.0,
+      "test_null_rate": 0.0,
+      "abs_test_dev": 0.12266552224228255
+    },
+    {
+      "feature": "num_prior_trials_same_drug",
+      "train_auc": 0.593489536450706,
+      "test_auc": 0.6120633052575501,
+      "delta_test_minus_train": 0.018573768806844138,
+      "test_dev_from_half": 0.11206330525755015,
+      "train_null_rate": 0.0,
+      "test_null_rate": 0.0,
+      "abs_test_dev": 0.11206330525755015
+    },
+    {
+      "feature": "action_type_INHIBITOR",
+      "train_auc": 0.5670924984787763,
+      "test_auc": 0.5857932745855225,
+      "delta_test_minus_train": 0.018700776106746253,
+      "test_dev_from_half": 0.08579327458552255,
+      "train_null_rate": 0.0,
+      "test_null_rate": 0.0,
+      "abs_test_dev": 0.08579327458552255
+    },
+    {
+      "feature": "duration_days",
+      "train_auc": 0.5019615473588659,
+      "test_auc": 0.57414678333149,
+      "delta_test_minus_train": 0.07218523597262416,
+      "test_dev_from_half": 0.07414678333149005,
+      "train_null_rate": 0.0,
+      "test_null_rate": 0.0,
+      "abs_test_dev": 0.07414678333149005
+    }
+  ],
+  "B3_chembl_null_indicator": [
+    {
+      "col": "chembl_id",
+      "present": true,
+      "train_null_rate": 0.6783789609829705,
+      "test_null_rate": 0.6777933942375264,
+      "train_null_indicator_auc": 0.6530584434924163,
+      "test_null_indicator_auc": 0.6948787528058908
+    },
+    {
+      "col": "target_chembl_id",
+      "present": true,
+      "train_null_rate": 0.6886541639721204,
+      "test_null_rate": 0.6918482080112438,
+      "train_null_indicator_auc": 0.6361168798596627,
+      "test_null_indicator_auc": 0.6870573079337583
+    },
+    {
+      "col": "primary_drug_canonical",
+      "present": true,
+      "train_null_rate": 0.4701803549615578,
+      "test_null_rate": 0.4111033028812368,
+      "train_null_indicator_auc": 0.7683962264150943,
+      "test_null_indicator_auc": 0.7250865717583685
+    },
+    {
+      "col": "matched_intervention_count",
+      "present": true,
+      "train_null_rate": 0.4701803549615578,
+      "test_null_rate": 0.4111033028812368,
+      "train_null_indicator_auc": 0.7683962264150943,
+      "test_null_indicator_auc": 0.7250865717583685
+    },
+    {
+      "col": "chembl_resolved",
+      "present": true,
+      "train_null_rate": 0.0,
+      "test_null_rate": 0.0,
+      "train_null_indicator_auc": NaN,
+      "test_null_indicator_auc": NaN
+    }
+  ],
+  "B4_kinase_overlap": {
+    "train_kinase_count": 82,
+    "test_kinase_count": 156,
+    "test_kinase_frac": 0.7027027027027027,
+    "train_kinase_frac": 0.0024621667067018975,
+    "per_bucket": [
+      {
+        "bucket": "moa_bucket_agonist",
+        "n_train": 3314,
+        "n_kinase_train": 0,
+        "frac_kinase": 0.0,
+        "flag_gt_50pct": false
+      },
+      {
+        "bucket": "moa_bucket_blocker",
+        "n_train": 324,
+        "n_kinase_train": 0,
+        "frac_kinase": 0.0,
+        "flag_gt_50pct": false
+      },
+      {
+        "bucket": "moa_bucket_inhibitor",
+        "n_train": 5402,
+        "n_kinase_train": 82,
+        "frac_kinase": 0.015179563124768604,
+        "flag_gt_50pct": false
+      },
+      {
+        "bucket": "moa_bucket_modulator",
+        "n_train": 574,
+        "n_kinase_train": 0,
+        "frac_kinase": 0.0,
+        "flag_gt_50pct": false
+      },
+      {
+        "bucket": "moa_bucket_other_moa",
+        "n_train": 999,
+        "n_kinase_train": 0,
+        "frac_kinase": 0.0,
+        "flag_gt_50pct": false
+      },
+      {
+        "bucket": "moa_bucket_unknown",
+        "n_train": 22691,
+        "n_kinase_train": 0,
+        "frac_kinase": 0.0,
+        "flag_gt_50pct": false
+      }
+    ]
+  },
+  "B5_oopd_edge_case": {
+    "is_orphan_at_registration_value_counts": {
+      "0": 32418,
+      "1": 1108
+    },
+    "drug_has_orphan_ever_value_counts": {
+      "0": 32192,
+      "1": 1334
+    },
+    "convention": "Day-2 sets is_orphan_at_registration=1 iff designation_date<=registration_date. Edge-case trials with designation_date within +/-7 days of reg cannot be re-audited from features_v2.parquet alone because designation_date is not retained on the feature matrix. Documented limitation.",
+    "drug_has_orphan_ever_in_model_features": false,
+    "is_orphan_at_registration_in_model_features": true
+  },
+  "B6_leave_one_drug_out": {
+    "n_sampled": 10,
+    "max_ta_diff_abs": 0.09574304664035249,
+    "max_moa_diff_abs": 0.6249549835822477,
+    "encoder_leak_flag_gt_0p01": "True",
+    "samples": [
+      {
+        "nct_id": "NCT04094012",
+        "drug": "nan",
+        "ta_col": "therapeutic_area_infectious",
+        "moa_col": "moa_bucket_unknown",
+        "stored_ta": 0.12216104611149346,
+        "recomputed_ta": 0.10905550146056475,
+        "ta_diff_abs": 0.01310554465092871,
+        "stored_moa": 0.05478900770380591,
+        "recomputed_moa": 0.07504501641775235,
+        "moa_diff_abs": 0.020256008713946443
+      },
+      {
+        "nct_id": "NCT03418168",
+        "drug": "nan",
+        "ta_col": "therapeutic_area_renal",
+        "moa_col": "moa_bucket_unknown",
+        "stored_ta": 0.10628019323671498,
+        "recomputed_ta": 0.1014799154334038,
+        "ta_diff_abs": 0.004800277803311173,
+        "stored_moa": 0.05478900770380591,
+        "recomputed_moa": 0.07504501641775235,
+        "moa_diff_abs": 0.020256008713946443
+      },
+      {
+        "nct_id": "NCT03822013",
+        "drug": "miglustat",
+        "ta_col": "therapeutic_area_neuro",
+        "moa_col": "moa_bucket_inhibitor",
+        "stored_ta": 0.12521391899600684,
+        "recomputed_ta": 0.12849584278155707,
+        "ta_diff_abs": 0.003281923785550228,
+        "stored_moa": 0.12409283609973414,
+        "recomputed_moa": 0.21244080929832113,
+        "moa_diff_abs": 0.08834797319858699
+      },
+      {
+        "nct_id": "NCT05032859",
+        "drug": "tapinarof 1",
+        "ta_col": "therapeutic_area_derm",
+        "moa_col": "moa_bucket_unknown",
+        "stored_ta": 0.18582375478927204,
+        "recomputed_ta": 0.21403508771929824,
+        "ta_diff_abs": 0.0282113329300262,
+        "stored_moa": 0.05478900770380591,
+        "recomputed_moa": 0.07504501641775235,
+        "moa_diff_abs": 0.020256008713946443
+      },
+      {
+        "nct_id": "NCT03691649",
+        "drug": "nan",
+        "ta_col": "therapeutic_area_cardio",
+        "moa_col": "moa_bucket_unknown",
+        "stored_ta": 0.08787289234760051,
+        "recomputed_ta": 0.08373101952277658,
+        "ta_diff_abs": 0.004141872824823936,
+        "stored_moa": 0.05478900770380591,
+        "recomputed_moa": 0.07504501641775235,
+        "moa_diff_abs": 0.020256008713946443
+      },
+      {
+        "nct_id": "NCT04429503",
+        "drug": "aflibercept",
+        "ta_col": "therapeutic_area_metabolic",
+        "moa_col": "moa_bucket_inhibitor",
+        "stored_ta": 0.18582375478927204,
+        "recomputed_ta": 0.2192948469585432,
+        "ta_diff_abs": 0.03347109216927116,
+        "stored_moa": 0.2581967213114754,
+        "recomputed_moa": 0.21129797326433808,
+        "moa_diff_abs": 0.04689874804713734
+      },
+      {
+        "nct_id": "NCT04322604",
+        "drug": "nan",
+        "ta_col": "therapeutic_area_other",
+        "moa_col": "moa_bucket_unknown",
+        "stored_ta": 0.18582375478927204,
+        "recomputed_ta": 0.09008070814891955,
+        "ta_diff_abs": 0.09574304664035249,
+        "stored_moa": 0.05478900770380591,
+        "recomputed_moa": 0.07504501641775235,
+        "moa_diff_abs": 0.020256008713946443
+      },
+      {
+        "nct_id": "NCT04627025",
+        "drug": "nan",
+        "ta_col": "therapeutic_area_gi",
+        "moa_col": "moa_bucket_unknown",
+        "stored_ta": 0.13274336283185842,
+        "recomputed_ta": 0.16981132075471697,
+        "ta_diff_abs": 0.03706795792285855,
+        "stored_moa": 0.05478900770380591,
+        "recomputed_moa": 0.07504501641775235,
+        "moa_diff_abs": 0.020256008713946443
+      },
+      {
+        "nct_id": "NCT05405725",
+        "drug": "prolia",
+        "ta_col": "therapeutic_area_metabolic",
+        "moa_col": "moa_bucket_unknown",
+        "stored_ta": 0.22090909090909092,
+        "recomputed_ta": 0.2193798449612403,
+        "ta_diff_abs": 0.001529245947850616,
+        "stored_moa": 0.7,
+        "recomputed_moa": 0.07504501641775235,
+        "moa_diff_abs": 0.6249549835822477
+      },
+      {
+        "nct_id": "NCT03461406",
+        "drug": "nan",
+        "ta_col": "therapeutic_area_other",
+        "moa_col": "moa_bucket_unknown",
+        "stored_ta": 0.0856727976766699,
+        "recomputed_ta": 0.09008070814891955,
+        "ta_diff_abs": 0.004407910472249657,
+        "stored_moa": 0.05478900770380591,
+        "recomputed_moa": 0.07504501641775235,
+        "moa_diff_abs": 0.020256008713946443
+      }
+    ]
+  },
+  "confirmed_leak_features": [],
+  "audit_retrain_table": [
+    {
+      "target": "p2_success",
+      "split_type": "time",
+      "n_train": 44271,
+      "n_test": 11084,
+      "n_pos_train": 17199,
+      "n_pos_test": 3414,
+      "n_features_orig": 108,
+      "n_features_audited": 108,
+      "dropped_features": [],
+      "orig_metrics_replayed": {
+        "auroc": 0.8764598413313078,
+        "brier": 0.13020177904241176,
+        "prauc": 0.753149869021738,
+        "ece": 0.026496036144856103
+      },
+      "orig_metrics_calibrated": {
+        "auroc": 0.8756293015415472,
+        "brier": 0.13023530802516492,
+        "prauc": 0.7418293622217137,
+        "ece": 0.02212336998110695
+      },
+      "audited_metrics_raw": {
+        "auroc": 0.8752185570726871,
+        "brier": 0.13033852161540624,
+        "prauc": 0.7541119878729642,
+        "ece": 0.027219083911478495
+      },
+      "audited_metrics_calibrated": {
+        "auroc": 0.8727877922718708,
+        "brier": 0.13694576097487218,
+        "prauc": 0.739233325877559,
+        "ece": 0.07264851432718591
+      },
+      "delta_auroc": -0.002841509269676412
+    },
+    {
+      "target": "p2_success",
+      "split_type": "drugclass",
+      "n_train": 54408,
+      "n_test": 947,
+      "n_pos_train": 19996,
+      "n_pos_test": 617,
+      "n_features_orig": 108,
+      "n_features_audited": 108,
+      "dropped_features": [],
+      "orig_metrics_replayed": {
+        "auroc": 0.820917440204312,
+        "brier": 0.1630663133357521,
+        "prauc": 0.8615665869414726,
+        "ece": 0.08196880684514513
+      },
+      "orig_metrics_calibrated": {
+        "auroc": 0.8199204361278916,
+        "brier": 0.1640837474571436,
+        "prauc": 0.8621995483485029,
+        "ece": 0.08098363139166644
+      },
+      "audited_metrics_raw": {
+        "auroc": 0.8224988949462206,
+        "brier": 0.1642628828746481,
+        "prauc": 0.872550602537073,
+        "ece": 0.07950251601861537
+      },
+      "audited_metrics_calibrated": {
+        "auroc": 0.8216836108246157,
+        "brier": 0.1729296776005783,
+        "prauc": 0.8653507712620231,
+        "ece": 0.12699793908694954
+      },
+      "delta_auroc": 0.0017631746967241568
+    },
+    {
+      "target": "p2_success",
+      "split_type": "indication",
+      "n_train": 34787,
+      "n_test": 20568,
+      "n_pos_train": 11272,
+      "n_pos_test": 9341,
+      "n_features_orig": 108,
+      "n_features_audited": 108,
+      "dropped_features": [],
+      "orig_metrics_replayed": {
+        "auroc": 0.8761922684988864,
+        "brier": 0.14174844217170807,
+        "prauc": 0.8394594202244451,
+        "ece": 0.047863405538413326
+      },
+      "orig_metrics_calibrated": {
+        "auroc": 0.875504030378843,
+        "brier": 0.14131454247476669,
+        "prauc": 0.8317824348401522,
+        "ece": 0.03917398686195289
+      },
+      "audited_metrics_raw": {
+        "auroc": 0.8763488555083465,
+        "brier": 0.14305607412237922,
+        "prauc": 0.8409764058998008,
+        "ece": 0.05569755992889282
+      },
+      "audited_metrics_calibrated": {
+        "auroc": 0.872886281577208,
+        "brier": 0.1558493898868951,
+        "prauc": 0.8249486000369803,
+        "ece": 0.11235271122563201
+      },
+      "delta_auroc": -0.0026177488016349004
+    },
+    {
+      "target": "p2_success",
+      "split_type": "target",
+      "n_train": 53860,
+      "n_test": 1495,
+      "n_pos_train": 19423,
+      "n_pos_test": 1190,
+      "n_features_orig": 108,
+      "n_features_audited": 108,
+      "dropped_features": [],
+      "orig_metrics_replayed": {
+        "auroc": 0.8253533544565367,
+        "brier": 0.1564369569829312,
+        "prauc": 0.9346722260393289,
+        "ece": 0.15742940386701526
+      },
+      "orig_metrics_calibrated": {
+        "auroc": 0.8238627910180466,
+        "brier": 0.15735536962787888,
+        "prauc": 0.9296945194596046,
+        "ece": 0.15784872534764502
+      },
+      "audited_metrics_raw": {
+        "auroc": 0.8237773798043808,
+        "brier": 0.15448124032960825,
+        "prauc": 0.9325216277537884,
+        "ece": 0.14749591504374135
+      },
+      "audited_metrics_calibrated": {
+        "auroc": 0.8232511365201818,
+        "brier": 0.1620151873045659,
+        "prauc": 0.9300795029452662,
+        "ece": 0.15652576340948127
+      },
+      "delta_auroc": -0.000611654497864822
+    },
+    {
+      "target": "p3_success",
+      "split_type": "time",
+      "n_train": 27834,
+      "n_test": 5692,
+      "n_pos_train": 3454,
+      "n_pos_test": 494,
+      "n_features_orig": 108,
+      "n_features_audited": 108,
+      "dropped_features": [],
+      "orig_metrics_replayed": {
+        "auroc": 0.8718295965592497,
+        "brier": 0.05969301566692807,
+        "prauc": 0.45249008113809747,
+        "ece": 0.025710403282411885
+      },
+      "orig_metrics_calibrated": {
+        "auroc": 0.8684471448844385,
+        "brier": 0.06089927591713565,
+        "prauc": 0.4372140308396411,
+        "ece": 0.028471099067401504
+      },
+      "audited_metrics_raw": {
+        "auroc": 0.865176656234958,
+        "brier": 0.06157916474655099,
+        "prauc": 0.4349073562959717,
+        "ece": 0.01700186153345129
+      },
+      "audited_metrics_calibrated": {
+        "auroc": 0.8603149295976497,
+        "brier": 0.06943990822517183,
+        "prauc": 0.4256342545001083,
+        "ece": 0.051546700244424204
+      },
+      "delta_auroc": -0.008132215286788869
+    },
+    {
+      "target": "p3_success",
+      "split_type": "drugclass",
+      "n_train": 33304,
+      "n_test": 222,
+      "n_pos_train": 3838,
+      "n_pos_test": 110,
+      "n_features_orig": 108,
+      "n_features_audited": 108,
+      "dropped_features": [],
+      "orig_metrics_replayed": {
+        "auroc": 0.7944805194805196,
+        "brier": 0.2567109738697059,
+        "prauc": 0.754222404702223,
+        "ece": 0.24090152036986875
+      },
+      "orig_metrics_calibrated": {
+        "auroc": 0.7955357142857142,
+        "brier": 0.25345357575234473,
+        "prauc": 0.7453913732406837,
+        "ece": 0.22754808355769196
+      },
+      "audited_metrics_raw": {
+        "auroc": 0.812012987012987,
+        "brier": 0.25422673327158635,
+        "prauc": 0.7710756123395888,
+        "ece": 0.25226501158704606
+      },
+      "audited_metrics_calibrated": {
+        "auroc": 0.8058441558441558,
+        "brier": 0.2442303371929671,
+        "prauc": 0.7497292352072911,
+        "ece": 0.22874223391903645
+      },
+      "delta_auroc": 0.010308441558441572
+    },
+    {
+      "target": "p3_success",
+      "split_type": "indication",
+      "n_train": 28173,
+      "n_test": 5353,
+      "n_pos_train": 3452,
+      "n_pos_test": 496,
+      "n_features_orig": 108,
+      "n_features_audited": 108,
+      "dropped_features": [],
+      "orig_metrics_replayed": {
+        "auroc": 0.8068426348403036,
+        "brier": 0.07474909313127863,
+        "prauc": 0.3235871203342393,
+        "ece": 0.026849452371874045
+      },
+      "orig_metrics_calibrated": {
+        "auroc": 0.8023685053829857,
+        "brier": 0.07546183958556965,
+        "prauc": 0.306345949895207,
+        "ece": 0.03161121760024911
+      },
+      "audited_metrics_raw": {
+        "auroc": 0.7928762610665021,
+        "brier": 0.07536897447668367,
+        "prauc": 0.32094833309684845,
+        "ece": 0.03328640767067499
+      },
+      "audited_metrics_calibrated": {
+        "auroc": 0.7735254488035228,
+        "brier": 0.0839892943203758,
+        "prauc": 0.2991605481114333,
+        "ece": 0.06398105418944926
+      },
+      "delta_auroc": -0.028843056579462845
+    },
+    {
+      "target": "p3_success",
+      "split_type": "target",
+      "n_train": 31833,
+      "n_test": 1693,
+      "n_pos_train": 3475,
+      "n_pos_test": 473,
+      "n_features_orig": 108,
+      "n_features_audited": 108,
+      "dropped_features": [],
+      "orig_metrics_replayed": {
+        "auroc": 0.8148667382941115,
+        "brier": 0.16394396887016127,
+        "prauc": 0.6052315250972112,
+        "ece": 0.10857726423003983
+      },
+      "orig_metrics_calibrated": {
+        "auroc": 0.8139101653207639,
+        "brier": 0.16476575430560822,
+        "prauc": 0.602412394225268,
+        "ece": 0.1084848891036815
+      },
+      "audited_metrics_raw": {
+        "auroc": 0.8045731812983052,
+        "brier": 0.16984387248690547,
+        "prauc": 0.6081639173082388,
+        "ece": 0.11643128568952171
+      },
+      "audited_metrics_calibrated": {
+        "auroc": 0.7964726371607804,
+        "brier": 0.17828675222374848,
+        "prauc": 0.5897011568111894,
+        "ece": 0.1397450789282547
+      },
+      "delta_auroc": -0.01743752815998345
+    }
+  ],
+  "null_label_experiment_p3_time": {
+    "target": "p3_success",
+    "split_type": "time",
+    "null_shuffled_auroc": 0.4817973434192223,
+    "seed": 42,
+    "verdict": "PASS_no_structural_leakage"
+  },
+  "verdict": {
+    "orig_auroc": 0.8684471448844385,
+    "audited_auroc": 0.8603149295976497,
+    "label": "HEADLINE_REAL"
+  }
+}

@@ -28,7 +28,7 @@ from sklearn.model_selection import GroupKFold, StratifiedKFold
 
 optuna.logging.set_verbosity(optuna.logging.WARNING)
 
-ROOT = Path("/mnt/ssd/research/trial-failure")
+ROOT = Path("work")
 OUTDIR = ROOT / "processed/day2"
 SPLITS_DIR = ROOT / "processed/splits"
 MODELS_DIR = ROOT / "models/day2"; MODELS_DIR.mkdir(parents=True, exist_ok=True)

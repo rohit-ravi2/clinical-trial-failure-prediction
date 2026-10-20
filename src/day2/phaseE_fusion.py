@@ -44,7 +44,7 @@ from sklearn.metrics import (average_precision_score, brier_score_loss,
                              roc_auc_score)
 from sklearn.model_selection import StratifiedKFold
 
-ROOT = Path("/mnt/ssd/research/trial-failure")
+ROOT = Path("work")
 DUCKDB = ROOT / "aact.duckdb"
 PARQUET_V2 = ROOT / "processed/day2/features_v2.parquet"
 SPLITS_DIR = ROOT / "processed/splits"

@@ -11,12 +11,12 @@ Hard-stop criteria:
   - Phase 3 base rate outside [8%, 25%].
 
 Outputs:
-  - /mnt/hdd/research/trial-failure/raw/fda/drugsfda.zip
-  - /mnt/hdd/research/trial-failure/raw/fda/extracted/*.txt
+  - work/raw/fda/drugsfda.zip
+  - work/raw/fda/extracted/*.txt
   - DuckDB schema `fda` with applications/products/submissions/etc.
   - DuckDB table `trials_labeled`
-  - /mnt/ssd/research/trial-failure/logs/gate2_fda.log
-  - /mnt/ssd/research/trial-failure/logs/gates.log (append)
+  - work/logs/gate2_fda.log
+  - work/logs/gates.log (append)
 """
 from __future__ import annotations
 
@@ -42,11 +42,11 @@ except ImportError as e:
     raise SystemExit("rapidfuzz required: pip install rapidfuzz") from e
 
 # ---- paths -----------------------------------------------------------------
-RAW_DIR = Path("/mnt/hdd/research/trial-failure/raw/fda")
+RAW_DIR = Path("work/raw/fda")
 EXTRACT_DIR = RAW_DIR / "extracted"
 ZIP_PATH = RAW_DIR / "drugsfda.zip"
-DUCKDB_PATH = Path("/mnt/ssd/research/trial-failure/aact.duckdb")
-LOGS_DIR = Path("/mnt/ssd/research/trial-failure/logs")
+DUCKDB_PATH = Path("work/aact.duckdb")
+LOGS_DIR = Path("work/logs")
 GATES_LOG = LOGS_DIR / "gates.log"
 GATE2_LOG = LOGS_DIR / "gate2_fda.log"
 

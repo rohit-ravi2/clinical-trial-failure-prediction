@@ -1,0 +1,128 @@
+{
+  "n_sampled": 10,
+  "max_ta_diff_abs": 0.09574304664035249,
+  "max_moa_diff_abs": 0.6249549835822477,
+  "encoder_leak_flag_gt_0p01": "True",
+  "samples": [
+    {
+      "nct_id": "NCT04094012",
+      "drug": "nan",
+      "ta_col": "therapeutic_area_infectious",
+      "moa_col": "moa_bucket_unknown",
+      "stored_ta": 0.12216104611149346,
+      "recomputed_ta": 0.10905550146056475,
+      "ta_diff_abs": 0.01310554465092871,
+      "stored_moa": 0.05478900770380591,
+      "recomputed_moa": 0.07504501641775235,
+      "moa_diff_abs": 0.020256008713946443
+    },
+    {
+      "nct_id": "NCT03418168",
+      "drug": "nan",
+      "ta_col": "therapeutic_area_renal",
+      "moa_col": "moa_bucket_unknown",
+      "stored_ta": 0.10628019323671498,
+      "recomputed_ta": 0.1014799154334038,
+      "ta_diff_abs": 0.004800277803311173,
+      "stored_moa": 0.05478900770380591,
+      "recomputed_moa": 0.07504501641775235,
+      "moa_diff_abs": 0.020256008713946443
+    },
+    {
+      "nct_id": "NCT03822013",
+      "drug": "miglustat",
+      "ta_col": "therapeutic_area_neuro",
+      "moa_col": "moa_bucket_inhibitor",
+      "stored_ta": 0.12521391899600684,
+      "recomputed_ta": 0.12849584278155707,
+      "ta_diff_abs": 0.003281923785550228,
+      "stored_moa": 0.12409283609973414,
+      "recomputed_moa": 0.21244080929832113,
+      "moa_diff_abs": 0.08834797319858699
+    },
+    {
+      "nct_id": "NCT05032859",
+      "drug": "tapinarof 1",
+      "ta_col": "therapeutic_area_derm",
+      "moa_col": "moa_bucket_unknown",
+      "stored_ta": 0.18582375478927204,
+      "recomputed_ta": 0.21403508771929824,
+      "ta_diff_abs": 0.0282113329300262,
+      "stored_moa": 0.05478900770380591,
+      "recomputed_moa": 0.07504501641775235,
+      "moa_diff_abs": 0.020256008713946443
+    },
+    {
+      "nct_id": "NCT03691649",
+      "drug": "nan",
+      "ta_col": "therapeutic_area_cardio",
+      "moa_col": "moa_bucket_unknown",
+      "stored_ta": 0.08787289234760051,
+      "recomputed_ta": 0.08373101952277658,
+      "ta_diff_abs": 0.004141872824823936,
+      "stored_moa": 0.05478900770380591,
+      "recomputed_moa": 0.07504501641775235,
+      "moa_diff_abs": 0.020256008713946443
+    },
+    {
+      "nct_id": "NCT04429503",
+      "drug": "aflibercept",
+      "ta_col": "therapeutic_area_metabolic",
+      "moa_col": "moa_bucket_inhibitor",
+      "stored_ta": 0.18582375478927204,
+      "recomputed_ta": 0.2192948469585432,
+      "ta_diff_abs": 0.03347109216927116,
+      "stored_moa": 0.2581967213114754,
+      "recomputed_moa": 0.21129797326433808,
+      "moa_diff_abs": 0.04689874804713734
+    },
+    {
+      "nct_id": "NCT04322604",
+      "drug": "nan",
+      "ta_col": "therapeutic_area_other",
+      "moa_col": "moa_bucket_unknown",
+      "stored_ta": 0.18582375478927204,
+      "recomputed_ta": 0.09008070814891955,
+      "ta_diff_abs": 0.09574304664035249,
+      "stored_moa": 0.05478900770380591,
+      "recomputed_moa": 0.07504501641775235,
+      "moa_diff_abs": 0.020256008713946443
+    },
+    {
+      "nct_id": "NCT04627025",
+      "drug": "nan",
+      "ta_col": "therapeutic_area_gi",
+      "moa_col": "moa_bucket_unknown",
+      "stored_ta": 0.13274336283185842,
+      "recomputed_ta": 0.16981132075471697,
+      "ta_diff_abs": 0.03706795792285855,
+      "stored_moa": 0.05478900770380591,
+      "recomputed_moa": 0.07504501641775235,
+      "moa_diff_abs": 0.020256008713946443
+    },
+    {
+      "nct_id": "NCT05405725",
+      "drug": "prolia",
+      "ta_col": "therapeutic_area_metabolic",
+      "moa_col": "moa_bucket_unknown",
+      "stored_ta": 0.22090909090909092,
+      "recomputed_ta": 0.2193798449612403,
+      "ta_diff_abs": 0.001529245947850616,
+      "stored_moa": 0.7,
+      "recomputed_moa": 0.07504501641775235,
+      "moa_diff_abs": 0.6249549835822477
+    },
+    {
+      "nct_id": "NCT03461406",
+      "drug": "nan",
+      "ta_col": "therapeutic_area_other",
+      "moa_col": "moa_bucket_unknown",
+      "stored_ta": 0.0856727976766699,
+      "recomputed_ta": 0.09008070814891955,
+      "ta_diff_abs": 0.004407910472249657,
+      "stored_moa": 0.05478900770380591,
+      "recomputed_moa": 0.07504501641775235,
+      "moa_diff_abs": 0.020256008713946443
+    }
+  ]
+}

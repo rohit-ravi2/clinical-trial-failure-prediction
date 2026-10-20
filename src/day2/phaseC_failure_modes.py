@@ -32,7 +32,7 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
-ROOT = Path("/mnt/ssd/research/trial-failure")
+ROOT = Path("work")
 DUCKDB = ROOT / "aact.duckdb"
 LOG = ROOT / "logs/phaseC.log"
 OUT_JSON = ROOT / "results/day2/phaseC_summary.json"

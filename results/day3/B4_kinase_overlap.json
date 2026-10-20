@@ -1,0 +1,50 @@
+{
+  "train_kinase_count": 82,
+  "test_kinase_count": 156,
+  "test_kinase_frac": 0.7027027027027027,
+  "train_kinase_frac": 0.0024621667067018975,
+  "per_bucket": [
+    {
+      "bucket": "moa_bucket_agonist",
+      "n_train": 3314,
+      "n_kinase_train": 0,
+      "frac_kinase": 0.0,
+      "flag_gt_50pct": false
+    },
+    {
+      "bucket": "moa_bucket_blocker",
+      "n_train": 324,
+      "n_kinase_train": 0,
+      "frac_kinase": 0.0,
+      "flag_gt_50pct": false
+    },
+    {
+      "bucket": "moa_bucket_inhibitor",
+      "n_train": 5402,
+      "n_kinase_train": 82,
+      "frac_kinase": 0.015179563124768604,
+      "flag_gt_50pct": false
+    },
+    {
+      "bucket": "moa_bucket_modulator",
+      "n_train": 574,
+      "n_kinase_train": 0,
+      "frac_kinase": 0.0,
+      "flag_gt_50pct": false
+    },
+    {
+      "bucket": "moa_bucket_other_moa",
+      "n_train": 999,
+      "n_kinase_train": 0,
+      "frac_kinase": 0.0,
+      "flag_gt_50pct": false
+    },
+    {
+      "bucket": "moa_bucket_unknown",
+      "n_train": 22691,
+      "n_kinase_train": 0,
+      "frac_kinase": 0.0,
+      "flag_gt_50pct": false
+    }
+  ]
+}

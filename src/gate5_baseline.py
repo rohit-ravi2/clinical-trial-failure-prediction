@@ -60,7 +60,7 @@ optuna.logging.set_verbosity(optuna.logging.WARNING)
 # --------------------------------------------------------------------------- #
 # Paths                                                                        #
 # --------------------------------------------------------------------------- #
-ROOT = Path("/mnt/ssd/research/trial-failure")
+ROOT = Path("work")
 FEATURE_PATH = ROOT / "processed" / "features_tabular.parquet"
 SCHEMA_PATH = ROOT / "processed" / "features_tabular_schema.json"
 SPLITS_DIR = ROOT / "processed" / "splits"
@@ -94,7 +94,7 @@ SPLITS = ("time", "drugclass", "indication", "target")
 RANDOM_SEED = 17
 OPTUNA_TRIALS = 50
 OPTUNA_TIMEOUT_S = 600  # 10 minutes
-# Host is shared with amr and cfdna agents. Limit thread count so we don't
+# Host is shared with other long-running jobs. Limit thread count so we do not
 # storm the box (16 physical cores; load avg has been ~20 during this run).
 LGBM_N_JOBS = 4
 # Optuna CV folds. 3 is the literature norm for "lightweight" tuning and

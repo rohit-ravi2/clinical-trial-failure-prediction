@@ -1,0 +1,13 @@
+{
+  "is_orphan_at_registration_value_counts": {
+    "0": 32418,
+    "1": 1108
+  },
+  "drug_has_orphan_ever_value_counts": {
+    "0": 32192,
+    "1": 1334
+  },
+  "convention": "Day-2 sets is_orphan_at_registration=1 iff designation_date<=registration_date. Edge-case trials with designation_date within +/-7 days of reg cannot be re-audited from features_v2.parquet alone because designation_date is not retained on the feature matrix. Documented limitation.",
+  "drug_has_orphan_ever_in_model_features": false,
+  "is_orphan_at_registration_in_model_features": true
+}

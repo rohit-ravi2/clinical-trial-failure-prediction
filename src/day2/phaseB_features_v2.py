@@ -29,7 +29,7 @@ from datetime import datetime, timezone
 import duckdb, numpy as np, pandas as pd
 from tqdm import tqdm
 
-ROOT = Path("/mnt/ssd/research/trial-failure")
+ROOT = Path("work")
 DUCKDB = ROOT / "aact.duckdb"
 OUTDIR = ROOT / "processed/day2"
 OUTDIR.mkdir(parents=True, exist_ok=True)
@@ -141,7 +141,7 @@ def feature_moa_local_chembl(con: duckdb.DuckDBPyConnection, df: pd.DataFrame) -
     log.info(f"  chembl drug_moa hits available: {len(moa)}")
 
     # Try chembl_full if A1 has populated it
-    chembl_full_path = Path("/mnt/hdd/research/trial-failure/raw/chembl/chembl_36_loaded.flag")
+    chembl_full_path = Path("work/raw/chembl/chembl_36_loaded.flag")
     if chembl_full_path.exists():
         log.info("  chembl_full schema available — augmenting")
         try:

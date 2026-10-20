@@ -1,0 +1,557 @@
+{
+  "constructed_at": "2026-05-12T18:36:43+00:00",
+  "results": [
+    {
+      "target": "p3",
+      "split_type": "time",
+      "train_n": 27834,
+      "test_n": 5692,
+      "test_pos_rate": 0.086788,
+      "n_features": 50,
+      "auroc": 0.766299,
+      "pr_auc": 0.216637,
+      "brier_uncal": 0.075055,
+      "brier_cal": 0.074864,
+      "ece_uncal": 0.02462,
+      "ece_cal": 0.023929,
+      "best_iter": 1251,
+      "optuna_trials": 50,
+      "elapsed_s": 90.2,
+      "best_params": {
+        "num_leaves": 45,
+        "max_depth": 6,
+        "min_data_in_leaf": 20,
+        "learning_rate": 0.012252449214818086,
+        "feature_fraction": 0.9935649471853785,
+        "bagging_fraction": 0.7511028311962621,
+        "lambda_l1": 0.001014779664504064,
+        "lambda_l2": 0.5989036632198116
+      },
+      "top_features": [
+        [
+          "enrollment",
+          49721.2721939357
+        ],
+        [
+          "duration_days",
+          46317.40920789441
+        ],
+        [
+          "oh_sponsor_type_industry",
+          45792.921359639615
+        ],
+        [
+          "number_of_arms",
+          13662.427452619653
+        ],
+        [
+          "masking_ord",
+          10831.029360481538
+        ],
+        [
+          "has_placebo",
+          5712.926827207208
+        ],
+        [
+          "is_randomized",
+          4315.70935677737
+        ],
+        [
+          "oh_therapeutic_area_endocrinology",
+          3905.7590846270323
+        ],
+        [
+          "oh_therapeutic_area_infectious_disease",
+          3810.2508492916822
+        ],
+        [
+          "oh_primary_endpoint_type_other",
+          3183.9933993071318
+        ]
+      ]
+    },
+    {
+      "target": "p3",
+      "split_type": "drugclass",
+      "train_n": 33304,
+      "test_n": 222,
+      "test_pos_rate": 0.495495,
+      "n_features": 50,
+      "auroc": 0.8,
+      "pr_auc": 0.764536,
+      "brier_uncal": 0.317455,
+      "brier_cal": 0.31487,
+      "ece_uncal": 0.335021,
+      "ece_cal": 0.331556,
+      "best_iter": 492,
+      "optuna_trials": 50,
+      "elapsed_s": 85.1,
+      "best_params": {
+        "num_leaves": 23,
+        "max_depth": 8,
+        "min_data_in_leaf": 20,
+        "learning_rate": 0.03681891837719154,
+        "feature_fraction": 0.6612755742357902,
+        "bagging_fraction": 0.7507157965270063,
+        "lambda_l1": 0.038628212947841016,
+        "lambda_l2": 0.052353955962129085
+      },
+      "top_features": [
+        [
+          "enrollment",
+          14504.415690124035
+        ],
+        [
+          "oh_sponsor_type_industry",
+          12886.516554057598
+        ],
+        [
+          "duration_days",
+          12843.295462161303
+        ],
+        [
+          "enrollment_log1p",
+          4822.930246472359
+        ],
+        [
+          "number_of_arms",
+          4487.593538552523
+        ],
+        [
+          "oh_sponsor_type_academic_or_other",
+          3667.2133898139
+        ],
+        [
+          "masking_ord",
+          3437.182353913784
+        ],
+        [
+          "has_placebo",
+          1932.7495715618134
+        ],
+        [
+          "oh_therapeutic_area_endocrinology",
+          1612.3355773687363
+        ],
+        [
+          "is_randomized",
+          1501.6472907066345
+        ]
+      ]
+    },
+    {
+      "target": "p3",
+      "split_type": "indication",
+      "train_n": 28173,
+      "test_n": 5353,
+      "test_pos_rate": 0.092658,
+      "n_features": 50,
+      "auroc": 0.740537,
+      "pr_auc": 0.211843,
+      "brier_uncal": 0.079313,
+      "brier_cal": 0.079544,
+      "ece_uncal": 0.01696,
+      "ece_cal": 0.019843,
+      "best_iter": 757,
+      "optuna_trials": 50,
+      "elapsed_s": 80.8,
+      "best_params": {
+        "num_leaves": 40,
+        "max_depth": 12,
+        "min_data_in_leaf": 28,
+        "learning_rate": 0.02016622534188121,
+        "feature_fraction": 0.5221757640457049,
+        "bagging_fraction": 0.9119436762886839,
+        "lambda_l1": 0.026401646719280858,
+        "lambda_l2": 0.9967396201339581
+      },
+      "top_features": [
+        [
+          "enrollment",
+          25832.090552687645
+        ],
+        [
+          "duration_days",
+          22674.215070307255
+        ],
+        [
+          "oh_sponsor_type_industry",
+          19178.79135645926
+        ],
+        [
+          "enrollment_log1p",
+          13732.105527698994
+        ],
+        [
+          "oh_sponsor_type_academic_or_other",
+          9640.15904507041
+        ],
+        [
+          "number_of_arms",
+          8188.281771514565
+        ],
+        [
+          "masking_ord",
+          7181.545676186681
+        ],
+        [
+          "has_placebo",
+          3956.1229234039783
+        ],
+        [
+          "is_randomized",
+          3397.708000779152
+        ],
+        [
+          "oh_therapeutic_area_endocrinology",
+          2735.2071332484484
+        ]
+      ]
+    },
+    {
+      "target": "p3",
+      "split_type": "target",
+      "train_n": 31833,
+      "test_n": 1693,
+      "test_pos_rate": 0.279386,
+      "n_features": 50,
+      "auroc": 0.752646,
+      "pr_auc": 0.523688,
+      "brier_uncal": 0.197255,
+      "brier_cal": 0.19484,
+      "ece_uncal": 0.149891,
+      "ece_cal": 0.145509,
+      "best_iter": 836,
+      "optuna_trials": 50,
+      "elapsed_s": 89.5,
+      "best_params": {
+        "num_leaves": 17,
+        "max_depth": 12,
+        "min_data_in_leaf": 37,
+        "learning_rate": 0.014039119963659006,
+        "feature_fraction": 0.7139201238191558,
+        "bagging_fraction": 0.9427652675538298,
+        "lambda_l1": 0.06854526612610848,
+        "lambda_l2": 0.0010800469024130354
+      },
+      "top_features": [
+        [
+          "oh_sponsor_type_industry",
+          32544.33402222395
+        ],
+        [
+          "enrollment",
+          23376.256336808205
+        ],
+        [
+          "duration_days",
+          21685.23930466175
+        ],
+        [
+          "oh_sponsor_type_academic_or_other",
+          13853.351440906525
+        ],
+        [
+          "enrollment_log1p",
+          7785.738036870956
+        ],
+        [
+          "number_of_arms",
+          7304.3340745568275
+        ],
+        [
+          "masking_ord",
+          5342.1796796917915
+        ],
+        [
+          "has_placebo",
+          4723.430443286896
+        ],
+        [
+          "is_randomized",
+          3835.8154643774033
+        ],
+        [
+          "oh_therapeutic_area_endocrinology",
+          3036.350914478302
+        ]
+      ]
+    },
+    {
+      "target": "p2",
+      "split_type": "time",
+      "train_n": 44271,
+      "test_n": 11084,
+      "test_pos_rate": 0.308012,
+      "n_features": 50,
+      "auroc": 0.736535,
+      "pr_auc": 0.499446,
+      "brier_uncal": 0.183152,
+      "brier_cal": 0.183895,
+      "ece_uncal": 0.032142,
+      "ece_cal": 0.036727,
+      "best_iter": 801,
+      "optuna_trials": 50,
+      "elapsed_s": 147.4,
+      "best_params": {
+        "num_leaves": 22,
+        "max_depth": 12,
+        "min_data_in_leaf": 26,
+        "learning_rate": 0.02339378033649009,
+        "feature_fraction": 0.868705661771937,
+        "bagging_fraction": 0.6413865160978096,
+        "lambda_l1": 0.0037190018595955774,
+        "lambda_l2": 0.7008995301017102
+      },
+      "top_features": [
+        [
+          "enrollment",
+          57273.68700373173
+        ],
+        [
+          "duration_days",
+          40944.27039837837
+        ],
+        [
+          "oh_therapeutic_area_oncology",
+          10939.764917969704
+        ],
+        [
+          "number_of_arms",
+          10521.347807884216
+        ],
+        [
+          "masking_ord",
+          10270.818382620811
+        ],
+        [
+          "enrollment_log1p",
+          6614.307473182678
+        ],
+        [
+          "oh_sponsor_type_industry",
+          5469.934363603592
+        ],
+        [
+          "has_placebo",
+          3834.761779665947
+        ],
+        [
+          "phase_ord",
+          3620.1051055192947
+        ],
+        [
+          "is_randomized",
+          3556.228044271469
+        ]
+      ]
+    },
+    {
+      "target": "p2",
+      "split_type": "drugclass",
+      "train_n": 54408,
+      "test_n": 947,
+      "test_pos_rate": 0.651531,
+      "n_features": 50,
+      "auroc": 0.830495,
+      "pr_auc": 0.876589,
+      "brier_uncal": 0.217651,
+      "brier_cal": 0.215989,
+      "ece_uncal": 0.248575,
+      "ece_cal": 0.248867,
+      "best_iter": 596,
+      "optuna_trials": 50,
+      "elapsed_s": 167.2,
+      "best_params": {
+        "num_leaves": 80,
+        "max_depth": 12,
+        "min_data_in_leaf": 20,
+        "learning_rate": 0.01477578416122914,
+        "feature_fraction": 0.5891334233526493,
+        "bagging_fraction": 0.7724001219200026,
+        "lambda_l1": 0.0010204481701014175,
+        "lambda_l2": 0.2671387981373481
+      },
+      "top_features": [
+        [
+          "enrollment",
+          129444.58943718672
+        ],
+        [
+          "duration_days",
+          71341.3186300993
+        ],
+        [
+          "enrollment_log1p",
+          48301.13483956456
+        ],
+        [
+          "number_of_arms",
+          22586.904970794916
+        ],
+        [
+          "masking_ord",
+          21541.01348334551
+        ],
+        [
+          "oh_therapeutic_area_oncology",
+          17453.33367049694
+        ],
+        [
+          "oh_sponsor_type_industry",
+          12923.708396077156
+        ],
+        [
+          "has_placebo",
+          8856.601051479578
+        ],
+        [
+          "is_randomized",
+          7856.4646881222725
+        ],
+        [
+          "phase_ord",
+          7456.757965564728
+        ]
+      ]
+    },
+    {
+      "target": "p2",
+      "split_type": "indication",
+      "train_n": 34787,
+      "test_n": 20568,
+      "test_pos_rate": 0.454152,
+      "n_features": 50,
+      "auroc": 0.707699,
+      "pr_auc": 0.615675,
+      "brier_uncal": 0.218798,
+      "brier_cal": 0.217488,
+      "ece_uncal": 0.079426,
+      "ece_cal": 0.068747,
+      "best_iter": 586,
+      "optuna_trials": 50,
+      "elapsed_s": 129.9,
+      "best_params": {
+        "num_leaves": 21,
+        "max_depth": 11,
+        "min_data_in_leaf": 57,
+        "learning_rate": 0.01992273669347249,
+        "feature_fraction": 0.9201304940560502,
+        "bagging_fraction": 0.6772938952959877,
+        "lambda_l1": 0.002676449997560353,
+        "lambda_l2": 0.004333659460501618
+      },
+      "top_features": [
+        [
+          "enrollment",
+          44426.04513847828
+        ],
+        [
+          "duration_days",
+          18834.829227805138
+        ],
+        [
+          "number_of_arms",
+          11038.906874537468
+        ],
+        [
+          "masking_ord",
+          9078.736009955406
+        ],
+        [
+          "oh_sponsor_type_industry",
+          7479.629355788231
+        ],
+        [
+          "has_placebo",
+          5066.511267662048
+        ],
+        [
+          "enrollment_log1p",
+          4534.356684446335
+        ],
+        [
+          "phase_ord",
+          3898.6288189888
+        ],
+        [
+          "is_randomized",
+          3616.0929033756256
+        ],
+        [
+          "oh_therapeutic_area_psychiatry",
+          3302.492076277733
+        ]
+      ]
+    },
+    {
+      "target": "p2",
+      "split_type": "target",
+      "train_n": 53860,
+      "test_n": 1495,
+      "test_pos_rate": 0.795987,
+      "n_features": 50,
+      "auroc": 0.811982,
+      "pr_auc": 0.918763,
+      "brier_uncal": 0.323762,
+      "brier_cal": 0.321989,
+      "ece_uncal": 0.450884,
+      "ece_cal": 0.448296,
+      "best_iter": 1087,
+      "optuna_trials": 50,
+      "elapsed_s": 207.6,
+      "best_params": {
+        "num_leaves": 31,
+        "max_depth": 12,
+        "min_data_in_leaf": 23,
+        "learning_rate": 0.011131417734134329,
+        "feature_fraction": 0.7745893720019417,
+        "bagging_fraction": 0.8298519039479048,
+        "lambda_l1": 0.3316281990079118,
+        "lambda_l2": 0.003185230859398915
+      },
+      "top_features": [
+        [
+          "enrollment",
+          177631.2625784576
+        ],
+        [
+          "duration_days",
+          86199.8095446229
+        ],
+        [
+          "enrollment_log1p",
+          38628.322916686535
+        ],
+        [
+          "oh_therapeutic_area_oncology",
+          36299.69618678093
+        ],
+        [
+          "masking_ord",
+          23988.497633457184
+        ],
+        [
+          "number_of_arms",
+          23597.17415690422
+        ],
+        [
+          "oh_sponsor_type_industry",
+          18625.139530956745
+        ],
+        [
+          "phase_ord",
+          9459.85812497139
+        ],
+        [
+          "is_randomized",
+          8961.925744116306
+        ],
+        [
+          "has_placebo",
+          8172.782999873161
+        ]
+      ]
+    }
+  ]
+}

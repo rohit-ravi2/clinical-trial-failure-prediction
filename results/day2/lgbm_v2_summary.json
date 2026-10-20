@@ -1,0 +1,805 @@
+{
+  "summaries": {
+    "p2/time": {
+      "task": "p2",
+      "split": "time",
+      "n_train": 44271,
+      "n_test": 11084,
+      "pos_train": 0.38849359625940233,
+      "pos_test": 0.3080115481775532,
+      "AUROC": 0.8764598413313078,
+      "PRAUC": 0.753149869021738,
+      "Brier_u": 0.13020177904241176,
+      "Brier_c": 0.13023530802516492,
+      "ECE_u": 0.026496036144856103,
+      "ECE_c": 0.02212336998110695,
+      "best_iter": 140,
+      "n_search_trials": 8,
+      "best_value": NaN,
+      "n_features": 108,
+      "top_features": [
+        [
+          "moa_bucket_unknown",
+          101594
+        ],
+        [
+          "enrollment",
+          38144
+        ],
+        [
+          "drug_type_small_molecule",
+          18044
+        ],
+        [
+          "duration_days",
+          8819
+        ],
+        [
+          "enrollment_log1p",
+          4970
+        ],
+        [
+          "target_type_unknown",
+          4570
+        ],
+        [
+          "num_prior_trials_same_drug",
+          3767
+        ],
+        [
+          "num_prior_trials_same_target",
+          3462
+        ],
+        [
+          "number_of_arms",
+          3276
+        ],
+        [
+          "is_orphan_at_registration",
+          2503
+        ],
+        [
+          "therapeutic_area_oncology",
+          2339
+        ],
+        [
+          "drug_type_other",
+          1983
+        ],
+        [
+          "drug_type_biologic",
+          1911
+        ],
+        [
+          "has_dmc",
+          1888
+        ],
+        [
+          "sponsor_class_industry",
+          1339
+        ],
+        [
+          "drug_type_device",
+          969
+        ],
+        [
+          "therapeutic_area_infectious",
+          945
+        ],
+        [
+          "drug_type_procedure",
+          898
+        ],
+        [
+          "num_distinct_prior_drugs_same_target",
+          861
+        ],
+        [
+          "any_blinding",
+          830
+        ]
+      ]
+    },
+    "p2/drugclass": {
+      "task": "p2",
+      "split": "drugclass",
+      "n_train": 54408,
+      "n_test": 947,
+      "pos_train": 0.3675194824290546,
+      "pos_test": 0.6515311510031679,
+      "AUROC": 0.820917440204312,
+      "PRAUC": 0.8615665869414726,
+      "Brier_u": 0.1630663133357521,
+      "Brier_c": 0.1640837474571436,
+      "ECE_u": 0.08196880684514513,
+      "ECE_c": 0.08098363139166644,
+      "best_iter": 170,
+      "n_search_trials": 8,
+      "best_value": NaN,
+      "n_features": 108,
+      "top_features": [
+        [
+          "moa_bucket_unknown",
+          112406
+        ],
+        [
+          "enrollment",
+          50641
+        ],
+        [
+          "drug_type_small_molecule",
+          24630
+        ],
+        [
+          "enrollment_log1p",
+          10185
+        ],
+        [
+          "duration_days",
+          9938
+        ],
+        [
+          "num_prior_trials_same_drug",
+          4942
+        ],
+        [
+          "num_prior_trials_same_target",
+          4633
+        ],
+        [
+          "number_of_arms",
+          3532
+        ],
+        [
+          "sponsor_class_industry",
+          3038
+        ],
+        [
+          "is_orphan_at_registration",
+          2871
+        ],
+        [
+          "has_dmc",
+          2321
+        ],
+        [
+          "therapeutic_area_oncology",
+          2303
+        ],
+        [
+          "target_type_unknown",
+          2178
+        ],
+        [
+          "is_fda_regulated_drug",
+          1553
+        ],
+        [
+          "drug_type_biologic",
+          1203
+        ],
+        [
+          "therapeutic_area_infectious",
+          1154
+        ],
+        [
+          "drug_type_other",
+          1138
+        ],
+        [
+          "any_blinding",
+          1112
+        ],
+        [
+          "num_distinct_prior_drugs_same_target",
+          1095
+        ],
+        [
+          "has_placebo",
+          1090
+        ]
+      ]
+    },
+    "p2/indication": {
+      "task": "p2",
+      "split": "indication",
+      "n_train": 34787,
+      "n_test": 20568,
+      "pos_train": 0.32402909132721996,
+      "pos_test": 0.45415208090237263,
+      "AUROC": 0.8761922684988864,
+      "PRAUC": 0.8394594202244451,
+      "Brier_u": 0.14174844217170807,
+      "Brier_c": 0.14131454247476669,
+      "ECE_u": 0.047863405538413326,
+      "ECE_c": 0.03917398686195289,
+      "best_iter": 113,
+      "n_search_trials": 8,
+      "best_value": NaN,
+      "n_features": 108,
+      "top_features": [
+        [
+          "moa_bucket_unknown",
+          42744
+        ],
+        [
+          "enrollment",
+          27727
+        ],
+        [
+          "target_type_unknown",
+          26782
+        ],
+        [
+          "drug_type_small_molecule",
+          18924
+        ],
+        [
+          "duration_days",
+          6044
+        ],
+        [
+          "number_of_arms",
+          3451
+        ],
+        [
+          "num_prior_trials_same_drug",
+          2795
+        ],
+        [
+          "sponsor_class_industry",
+          2434
+        ],
+        [
+          "is_orphan_at_registration",
+          2065
+        ],
+        [
+          "enrollment_log1p",
+          1960
+        ],
+        [
+          "num_prior_trials_same_target",
+          1930
+        ],
+        [
+          "has_dmc",
+          1596
+        ],
+        [
+          "moa_bucket_other_moa",
+          1520
+        ],
+        [
+          "drug_type_biologic",
+          1313
+        ],
+        [
+          "drug_type_other",
+          1313
+        ],
+        [
+          "any_blinding",
+          1090
+        ],
+        [
+          "therapeutic_area_infectious",
+          1077
+        ],
+        [
+          "is_fda_regulated_drug",
+          949
+        ],
+        [
+          "phase_ord",
+          906
+        ],
+        [
+          "is_fda_regulated_device",
+          668
+        ]
+      ]
+    },
+    "p2/target": {
+      "task": "p2",
+      "split": "target",
+      "n_train": 53860,
+      "n_test": 1495,
+      "pos_train": 0.3606201262532492,
+      "pos_test": 0.7959866220735786,
+      "AUROC": 0.8253533544565367,
+      "PRAUC": 0.9346722260393289,
+      "Brier_u": 0.1564369569829312,
+      "Brier_c": 0.15735536962787888,
+      "ECE_u": 0.15742940386701526,
+      "ECE_c": 0.15784872534764502,
+      "best_iter": 120,
+      "n_search_trials": 8,
+      "best_value": NaN,
+      "n_features": 108,
+      "top_features": [
+        [
+          "moa_bucket_unknown",
+          90505
+        ],
+        [
+          "enrollment",
+          52261
+        ],
+        [
+          "drug_type_small_molecule",
+          23568
+        ],
+        [
+          "target_type_unknown",
+          19476
+        ],
+        [
+          "duration_days",
+          8608
+        ],
+        [
+          "enrollment_log1p",
+          6947
+        ],
+        [
+          "number_of_arms",
+          3548
+        ],
+        [
+          "num_prior_trials_same_drug",
+          2841
+        ],
+        [
+          "is_orphan_at_registration",
+          2743
+        ],
+        [
+          "sponsor_class_industry",
+          2578
+        ],
+        [
+          "num_prior_trials_same_target",
+          2513
+        ],
+        [
+          "therapeutic_area_oncology",
+          2109
+        ],
+        [
+          "has_dmc",
+          1811
+        ],
+        [
+          "is_fda_regulated_drug",
+          1675
+        ],
+        [
+          "drug_type_biologic",
+          1493
+        ],
+        [
+          "drug_type_other",
+          1303
+        ],
+        [
+          "any_blinding",
+          1112
+        ],
+        [
+          "therapeutic_area_infectious",
+          995
+        ],
+        [
+          "num_distinct_prior_drugs_same_target",
+          932
+        ],
+        [
+          "has_placebo",
+          881
+        ]
+      ]
+    },
+    "p3/time": {
+      "task": "p3",
+      "split": "time",
+      "n_train": 27834,
+      "n_test": 5692,
+      "pos_train": 0.12409283609973414,
+      "pos_test": 0.08678847505270555,
+      "AUROC": 0.8718295965592497,
+      "PRAUC": 0.45249008113809747,
+      "Brier_u": 0.05969301566692807,
+      "Brier_c": 0.06089927591713565,
+      "ECE_u": 0.025710403282411885,
+      "ECE_c": 0.028471099067401504,
+      "best_iter": 131,
+      "n_search_trials": 8,
+      "best_value": NaN,
+      "n_features": 108,
+      "top_features": [
+        [
+          "sponsor_class_industry",
+          9624
+        ],
+        [
+          "num_prior_trials_same_drug",
+          9085
+        ],
+        [
+          "moa_bucket_unknown",
+          8801
+        ],
+        [
+          "enrollment",
+          8127
+        ],
+        [
+          "duration_days",
+          6684
+        ],
+        [
+          "drug_type_small_molecule",
+          4176
+        ],
+        [
+          "num_prior_trials_same_target",
+          4002
+        ],
+        [
+          "num_distinct_prior_drugs_same_target",
+          2033
+        ],
+        [
+          "sponsor_class_academic",
+          2014
+        ],
+        [
+          "has_dmc",
+          1577
+        ],
+        [
+          "number_of_arms",
+          1450
+        ],
+        [
+          "therapeutic_area_metabolic",
+          1251
+        ],
+        [
+          "enrollment_log1p",
+          932
+        ],
+        [
+          "therapeutic_area_infectious",
+          912
+        ],
+        [
+          "is_randomized",
+          772
+        ],
+        [
+          "any_blinding",
+          715
+        ],
+        [
+          "primary_endpoint_type_other_ep",
+          661
+        ],
+        [
+          "target_novelty",
+          621
+        ],
+        [
+          "target_type_unknown",
+          554
+        ],
+        [
+          "target_type_SINGLE PROTEIN",
+          468
+        ]
+      ]
+    },
+    "p3/drugclass": {
+      "task": "p3",
+      "split": "drugclass",
+      "n_train": 33304,
+      "n_test": 222,
+      "pos_train": 0.11524141244294979,
+      "pos_test": 0.4954954954954955,
+      "AUROC": 0.7944805194805196,
+      "PRAUC": 0.754222404702223,
+      "Brier_u": 0.2567109738697059,
+      "Brier_c": 0.25345357575234473,
+      "ECE_u": 0.24090152036986875,
+      "ECE_c": 0.22754808355769196,
+      "best_iter": 238,
+      "n_search_trials": 8,
+      "best_value": NaN,
+      "n_features": 108,
+      "top_features": [
+        [
+          "enrollment",
+          13216
+        ],
+        [
+          "num_prior_trials_same_drug",
+          13196
+        ],
+        [
+          "sponsor_class_industry",
+          11260
+        ],
+        [
+          "duration_days",
+          10564
+        ],
+        [
+          "moa_bucket_unknown",
+          7846
+        ],
+        [
+          "num_prior_trials_same_target",
+          5199
+        ],
+        [
+          "drug_type_small_molecule",
+          4173
+        ],
+        [
+          "num_distinct_prior_drugs_same_target",
+          2635
+        ],
+        [
+          "has_dmc",
+          2456
+        ],
+        [
+          "target_type_unknown",
+          2097
+        ],
+        [
+          "enrollment_log1p",
+          1837
+        ],
+        [
+          "number_of_arms",
+          1735
+        ],
+        [
+          "therapeutic_area_metabolic",
+          1721
+        ],
+        [
+          "is_fda_regulated_drug",
+          1443
+        ],
+        [
+          "target_novelty",
+          1150
+        ],
+        [
+          "sponsor_class_academic",
+          1062
+        ],
+        [
+          "action_type_unknown",
+          973
+        ],
+        [
+          "is_randomized",
+          927
+        ],
+        [
+          "therapeutic_area_infectious",
+          770
+        ],
+        [
+          "moa_bucket_inhibitor",
+          718
+        ]
+      ]
+    },
+    "p3/indication": {
+      "task": "p3",
+      "split": "indication",
+      "n_train": 28173,
+      "n_test": 5353,
+      "pos_train": 0.1225286621942995,
+      "pos_test": 0.09265832243601718,
+      "AUROC": 0.8068426348403036,
+      "PRAUC": 0.3235871203342393,
+      "Brier_u": 0.07474909313127863,
+      "Brier_c": 0.07546183958556965,
+      "ECE_u": 0.026849452371874045,
+      "ECE_c": 0.03161121760024911,
+      "best_iter": 204,
+      "n_search_trials": 8,
+      "best_value": NaN,
+      "n_features": 108,
+      "top_features": [
+        [
+          "enrollment",
+          11335
+        ],
+        [
+          "num_prior_trials_same_drug",
+          10723
+        ],
+        [
+          "moa_bucket_unknown",
+          9744
+        ],
+        [
+          "sponsor_class_industry",
+          9239
+        ],
+        [
+          "duration_days",
+          9042
+        ],
+        [
+          "num_prior_trials_same_target",
+          4921
+        ],
+        [
+          "drug_type_small_molecule",
+          4198
+        ],
+        [
+          "num_distinct_prior_drugs_same_target",
+          2233
+        ],
+        [
+          "number_of_arms",
+          2010
+        ],
+        [
+          "has_dmc",
+          1939
+        ],
+        [
+          "sponsor_class_academic",
+          1677
+        ],
+        [
+          "is_fda_regulated_drug",
+          1498
+        ],
+        [
+          "therapeutic_area_metabolic",
+          1397
+        ],
+        [
+          "enrollment_log1p",
+          1227
+        ],
+        [
+          "target_novelty",
+          962
+        ],
+        [
+          "is_randomized",
+          883
+        ],
+        [
+          "therapeutic_area_infectious",
+          870
+        ],
+        [
+          "any_blinding",
+          791
+        ],
+        [
+          "primary_endpoint_type_other_ep",
+          678
+        ],
+        [
+          "therapeutic_area_other",
+          635
+        ]
+      ]
+    },
+    "p3/target": {
+      "task": "p3",
+      "split": "target",
+      "n_train": 31833,
+      "n_test": 1693,
+      "pos_train": 0.10916344673766218,
+      "pos_test": 0.2793857058476078,
+      "AUROC": 0.8148667382941115,
+      "PRAUC": 0.6052315250972112,
+      "Brier_u": 0.16394396887016127,
+      "Brier_c": 0.16476575430560822,
+      "ECE_u": 0.10857726423003983,
+      "ECE_c": 0.1084848891036815,
+      "best_iter": 141,
+      "n_search_trials": 8,
+      "best_value": NaN,
+      "n_features": 108,
+      "top_features": [
+        [
+          "num_prior_trials_same_drug",
+          10895
+        ],
+        [
+          "sponsor_class_industry",
+          9816
+        ],
+        [
+          "enrollment",
+          9687
+        ],
+        [
+          "moa_bucket_unknown",
+          7996
+        ],
+        [
+          "duration_days",
+          7412
+        ],
+        [
+          "drug_type_small_molecule",
+          3638
+        ],
+        [
+          "num_prior_trials_same_target",
+          3488
+        ],
+        [
+          "num_distinct_prior_drugs_same_target",
+          1762
+        ],
+        [
+          "has_dmc",
+          1717
+        ],
+        [
+          "sponsor_class_academic",
+          1659
+        ],
+        [
+          "number_of_arms",
+          1455
+        ],
+        [
+          "target_type_unknown",
+          1427
+        ],
+        [
+          "enrollment_log1p",
+          1159
+        ],
+        [
+          "is_fda_regulated_drug",
+          1135
+        ],
+        [
+          "therapeutic_area_metabolic",
+          966
+        ],
+        [
+          "therapeutic_area_infectious",
+          823
+        ],
+        [
+          "target_novelty",
+          806
+        ],
+        [
+          "any_blinding",
+          782
+        ],
+        [
+          "drug_type_biologic",
+          739
+        ],
+        [
+          "moa_bucket_inhibitor",
+          658
+        ]
+      ]
+    }
+  },
+  "_elapsed_s": 7.412311315536499
+}

@@ -4,7 +4,7 @@ Runs all 7 sub-downloads with progress logging. Each download is a subprocess
 that can be retried independently. Resumable: skips files that already exist
 with non-zero size, uses curl -C - for partial resume on supported endpoints.
 
-Outputs raw to /mnt/hdd/research/trial-failure/raw/<source>/
+Outputs raw to work/raw/<source>/
 Writes phaseA_status.json with per-source results.
 """
 from __future__ import annotations
@@ -12,9 +12,9 @@ import argparse, json, os, subprocess, sys, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-RAW = Path("/mnt/hdd/research/trial-failure/raw")
-LOG = Path("/mnt/ssd/research/trial-failure/logs/phaseA.log")
-STATUS = Path("/mnt/ssd/research/trial-failure/logs/phaseA_status.json")
+RAW = Path("work/raw")
+LOG = Path("work/logs/phaseA.log")
+STATUS = Path("work/logs/phaseA_status.json")
 LOG.parent.mkdir(parents=True, exist_ok=True)
 
 def log(msg: str):
@@ -113,7 +113,7 @@ def a2_pubchem() -> dict:
     if not cids:
         # fallback: query PubChem for our cohort intervention names (limit 3000)
         import duckdb
-        con = duckdb.connect("/mnt/ssd/research/trial-failure/aact.duckdb", read_only=True)
+        con = duckdb.connect("work/aact.duckdb", read_only=True)
         names = con.execute(
             """SELECT DISTINCT lower(name) AS nm FROM interventions
                WHERE intervention_type IN ('Drug','Biological')

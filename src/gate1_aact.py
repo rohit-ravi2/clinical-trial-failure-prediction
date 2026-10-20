@@ -6,11 +6,11 @@ Resumable:
   - skips DuckDB load for any table already present with rowcount > 0
 
 Outputs:
-  - /mnt/hdd/research/trial-failure/raw/aact/aact.zip
-  - /mnt/hdd/research/trial-failure/raw/aact/extracted/*.txt
-  - /mnt/ssd/research/trial-failure/aact.duckdb
-  - /mnt/ssd/research/trial-failure/logs/gates.log (append)
-  - /mnt/ssd/research/trial-failure/logs/gate1_aact.log
+  - work/raw/aact/aact.zip
+  - work/raw/aact/extracted/*.txt
+  - work/aact.duckdb
+  - work/logs/gates.log (append)
+  - work/logs/gate1_aact.log
 
 Pass criterion: studies row count > 400,000.
 Hard stop if studies < 350,000.
@@ -30,11 +30,11 @@ import requests
 from tqdm import tqdm
 
 # ---- paths -----------------------------------------------------------------
-RAW_DIR = Path("/mnt/hdd/research/trial-failure/raw/aact")
+RAW_DIR = Path("work/raw/aact")
 EXTRACT_DIR = RAW_DIR / "extracted"
 ZIP_PATH = RAW_DIR / "aact.zip"
-DUCKDB_PATH = Path("/mnt/ssd/research/trial-failure/aact.duckdb")
-LOGS_DIR = Path("/mnt/ssd/research/trial-failure/logs")
+DUCKDB_PATH = Path("work/aact.duckdb")
+LOGS_DIR = Path("work/logs")
 GATES_LOG = LOGS_DIR / "gates.log"
 GATE1_LOG = LOGS_DIR / "gate1_aact.log"
 
@@ -229,7 +229,7 @@ def load_into_duckdb(files: list[Path]) -> dict[str, int]:
              len(present_required), len(REQUIRED_TABLES), missing)
 
     con = duckdb.connect(DUCKDB_PATH.as_posix())
-    # Pragma: keep memory bounded so other agents can coexist
+    # Pragma: keep memory bounded so other jobs on the host can coexist
     con.execute("PRAGMA memory_limit='24GB'")
     con.execute("PRAGMA threads=8")
 

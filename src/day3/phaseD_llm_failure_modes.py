@@ -6,9 +6,9 @@ Resumable: persists batch_id and results to disk; re-running picks up where
 it stopped.
 
 Outputs:
-  /mnt/ssd/research/trial-failure/processed/day3/llm_failure_modes.parquet
-  /mnt/ssd/research/trial-failure/processed/day3/llm_batch_state.json
-  /mnt/ssd/research/trial-failure/processed/day3/llm_failure_modes_summary.json
+  work/processed/day3/llm_failure_modes.parquet
+  work/processed/day3/llm_batch_state.json
+  work/processed/day3/llm_failure_modes_summary.json
 """
 from __future__ import annotations
 import hashlib
@@ -27,13 +27,13 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
-        logging.FileHandler("/mnt/ssd/research/trial-failure/logs/day3_phaseD.log"),
+        logging.FileHandler("work/logs/day3_phaseD.log"),
         logging.StreamHandler(sys.stdout),
     ],
 )
 log = logging.getLogger("phaseD")
 
-ROOT = Path("/mnt/ssd/research/trial-failure")
+ROOT = Path("work")
 OUT_DIR = ROOT / "processed/day3"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
