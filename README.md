@@ -67,7 +67,6 @@ src/day2/                                 extra downloads, 108-feature leak-clea
 src/day3/phaseB_leakage_audit.py          the audit
 src/day3/phaseC_real_embeddings.py        ChemBERTa / ESM2 / SciBERT embedding extraction
 src/day3/phaseC4_real_fusion.py           fusion training and the tabular-only control
-src/day3/phaseD_llm_failure_modes.py      failure-mode labelling of why_stopped text (not run)
 results/                                  every metrics file quoted above
 models/                                   8 LightGBM models (P2/P3 x 4 splits)
 ```
@@ -98,7 +97,7 @@ python src/day3/phaseC4_real_fusion.py
 
 ## Not finished
 
-`src/day3/phaseD_llm_failure_modes.py` classifies the 33,042 unique `why_stopped` strings from terminated trials into efficacy / safety / PK / recruitment / operational buckets through the Anthropic Batches API at temperature 0. It is written and resumable but has not been run, so no failure-mode results are in this repo. Predicting *why* a trial stops, rather than whether it succeeds, is the direction I would take this next.
+The next step is classifying the 33,042 unique `why_stopped` strings from terminated trials into efficacy / safety / PK / recruitment / operational buckets; the rule-based pass in `src/day2/phaseC_failure_modes.py` covers the clear cases and leaves the rest as unknown. Predicting *why* a trial stops, rather than whether it succeeds, is the direction I would take this next.
 
 ## License
 

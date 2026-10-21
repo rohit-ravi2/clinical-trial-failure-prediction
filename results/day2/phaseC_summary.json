@@ -17,6 +17,6 @@
     "efficacy": 1247,
     "pk": 47
   },
-  "anthropic_llm_resolved": 0,
+  "llm_resolved": 0,
   "elapsed_s": 2.3
 }

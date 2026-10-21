@@ -7,8 +7,7 @@ Sources (priority order):
 1. FDA Complete Response Letter reason — not available in Day 1 raw; treated
    here as enhancement deferred. (We have openFDA labels in fda_adcom/ but
    they're approval documents not rejection letters.)
-2. CT.gov why_stopped — primary source. Rule-based regex classifier plus
-   optional Anthropic Sonnet 4.5 batch refinement when ANTHROPIC_API_KEY is set.
+2. CT.gov why_stopped — primary source. Rule-based regex classifier.
 3. FAERS post-market spike — used for already-completed trials to flag
    SAFETY mode based on AE counts within 2 years post-completion.
 4. AdCom voting — not directly downloadable as structured data; deferred.
@@ -107,45 +106,6 @@ def classify_reason(text: str) -> tuple[dict, str, float]:
     return scores, primary, float(conf)
 
 # ===========================================================
-# Anthropic API path (only if ANTHROPIC_API_KEY is set)
-# ===========================================================
-def maybe_anthropic_refine(unknown_strings: list[str], max_calls: int = 200) -> dict[str, dict]:
-    """Send a batch of UNKNOWN reasons to Sonnet for classification.
-
-    Returns mapping reason -> {"category": str, "conf": float}.
-    Skipped silently if key absent or anthropic not installed.
-    """
-    key = os.environ.get("ANTHROPIC_API_KEY", "")
-    if not key:
-        log.info("ANTHROPIC_API_KEY empty; skipping LLM refinement")
-        return {}
-    try:
-        import anthropic
-    except ImportError:
-        log.warning("anthropic package not installed; skipping LLM refinement")
-        return {}
-    client = anthropic.Anthropic()
-    sample = unknown_strings[:max_calls]
-    out = {}
-    SYSTEM = ("You classify clinical-trial stop reasons. Reply with one of "
-              "EFFICACY, SAFETY, PK, RECRUITMENT, OPERATIONAL, UNKNOWN. No other text.")
-    for s in tqdm(sample, desc="anthropic-classify"):
-        try:
-            r = client.messages.create(
-                model="claude-sonnet-4-5",
-                max_tokens=10,
-                system=SYSTEM,
-                messages=[{"role": "user", "content": s[:1000]}],
-            )
-            lbl = r.content[0].text.strip().upper()
-            if lbl in {"EFFICACY","SAFETY","PK","RECRUITMENT","OPERATIONAL","UNKNOWN"}:
-                out[s] = {"category": lbl.lower(), "conf": 0.7}
-        except Exception as e:
-            log.warning(f"anthropic call failed: {e}")
-            break
-    return out
-
-# ===========================================================
 # FAERS-based safety signal (optional, for completed trials)
 # ===========================================================
 def build_faers_safety_signal(con: duckdb.DuckDBPyConnection) -> pd.DataFrame:
@@ -204,10 +164,10 @@ def main():
     log.info("primary distribution:")
     log.info("\n" + df["label_primary"].value_counts().to_string())
 
-    # Try Anthropic refinement on a sample of UNKNOWN
+    # UNKNOWN reasons are left for a later classifier pass
     unknown_strings = df[df["label_primary"] == "unknown"]["why_stopped"].dropna().drop_duplicates().tolist()
-    log.info(f"unique UNKNOWN reasons available for LLM: {len(unknown_strings)}")
-    refined = maybe_anthropic_refine(unknown_strings, max_calls=200)
+    log.info(f"unique UNKNOWN reasons: {len(unknown_strings)}")
+    refined = {}
     if refined:
         log.info(f"LLM resolved {len(refined)} additional reasons")
         mask = (df["label_primary"] == "unknown") & df["why_stopped"].isin(refined.keys())
@@ -257,7 +217,7 @@ def main():
         "coverage_primary_label_pct": round(100 * cov_with_reason, 2),
         "category_multilabel_counts": cat_counts,
         "primary_distribution": df["label_primary"].value_counts().to_dict(),
-        "anthropic_llm_resolved": len(refined),
+        "llm_resolved": len(refined),
         "elapsed_s": round(time.time() - t0, 1),
     }
     OUT_JSON.write_text(json.dumps(summary, indent=2))
